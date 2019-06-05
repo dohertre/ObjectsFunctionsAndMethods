@@ -35,6 +35,7 @@ def main():
 
     turtle1()
     turtle4()
+    turtle5()
     turtle3()
     turtle2()
     turtle2()
@@ -120,7 +121,7 @@ def turtle4():
 def turtle5():
 
     james = rg.SimpleTurtle()
-    james.pen = rg.pen('LightPink', 10)
+    james.pen = rg.Pen('LightPink', 10)
 
     james.forward(150)
     james.right(30)
@@ -128,7 +129,7 @@ def turtle5():
 
 
     simon = rg.SimpleTurtle()
-    simon.pen = rg.pen('indian red', 20)
+    simon.pen = rg.Pen('indian red', 20)
 
     simon.left(100)
     simon.begin_fill()
@@ -216,7 +217,7 @@ def turtle5():
 
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
