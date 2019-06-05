@@ -84,7 +84,9 @@ def main():
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
     try_methods()
     try_functions()
+    try_methods_and_functions()
     window.close_on_mouse_click()
+
 
 
 def jump_and_move_turtle(x1, y1, x2, y2):
@@ -264,10 +266,14 @@ def try_methods_and_functions():
     james.pen = rg.Pen('black',3)
 
     james.backward(200)
-    
+
+    james.draw_circle(30)
+
+    james.draw_square(50)
+
 
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
