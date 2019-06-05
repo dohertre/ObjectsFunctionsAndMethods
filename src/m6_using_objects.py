@@ -159,15 +159,20 @@ def lines():
     line1 = rg.Line(rg.Point(100, 50), rg.Point(200, 30))
     line1.attach_to(window3)
 
-    line2 = rg.Line(rg.Point(60, 100), rg.Point(20, 100))
+    line2 = rg.Line(rg.Point(60, 100), rg.Point(20, 70))
     line2.thickness = 7
     line2.attach_to(window3)
+
+    print('Thicker Line:')
+    print('Point(40,85)')
+    print('40')
+    print('85')
 
     window3.render()
     window3.close_on_mouse_click()
 
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     # ------------------------------------------------------------------
 
 
