@@ -103,6 +103,7 @@ def turtle3():
     maja.draw_circle(50)
     maja.end_fill()
 
+
 def turtle4():
 
     corri = rg.SimpleTurtle()
@@ -114,6 +115,25 @@ def turtle4():
     corri.begin_fill()
     corri.draw_circle(100)
     corri.end_fill()
+
+
+def turtle5():
+
+    james = rg.SimpleTurtle()
+    james.pen = rg.pen('LightPink', 10)
+
+    james.forward(150)
+    james.right(30)
+    james.backward(100)
+
+
+    simon = rg.SimpleTurtle()
+    simon.pen = rg.pen('indian red', 20)
+
+    simon.left(100)
+    simon.begin_fill()
+    simon.draw_circle(300)
+    simon.end_fill()
 
 
 ########################################################################
@@ -180,7 +200,7 @@ def turtle4():
 
 ########################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
