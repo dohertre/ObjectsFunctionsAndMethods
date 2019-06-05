@@ -21,7 +21,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 ########################################################################
 
 import rosegraphics as rg
-
+import random
 
 
 def main():
@@ -102,10 +102,22 @@ def turtle3():
     maja.draw_circle(50)
     maja.end_fill()
 
+def turtle4():
+
+    corri = rg.SimpleTurtle()
+    corri.pen = rg.Pen('MediumPurple', 5)
+
+    corri.backward(40)
+    corri.right(100)
+
+    corri.begin_fill()
+    corri.draw_circle(100)
+    corri.end_fill()
+
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
