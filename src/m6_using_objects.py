@@ -16,6 +16,7 @@ def main():
     # Test your functions by putting calls to them here:
     two_circles()
 
+
 def two_circles():
     """
     -- Constructs an rg.RoseWindow.
@@ -27,13 +28,24 @@ def two_circles():
     -- Waits for the user to press the mouse, then closes the window.
     """
 
-    window = rg.RoseWindow(500, 500)
+    window = rg.RoseWindow()
 
+    center_point1 = rg.Point(200, 100)
+    radius1 = 50
+    circle1 = rg.Circle(center_point1, radius1)
+    circle1.fill_color = 'aquamarine'
+    circle1.attach_to(window)
 
+    center_point2 = rg.Point(100, 50)
+    radius2 = 10
+    circle2 = rg.Circle(center_point2, radius2)
+    circle2.attach_to(window)
+
+    window.render()
     window.close_on_mouse_click()
 
     # ------------------------------------------------------------------
-    # TODO: 2. Implement this function, per its doc-string above.
+    # DONE: 2. Implement this function, per its doc-string above.
     #    -- ANY two rg.Circle objects that meet the criteria are fine.
     #    -- File  COLORS.txt  lists all legal color-names.
     # Put a statement in   main   to test this function
